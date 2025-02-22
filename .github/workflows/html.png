@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Expense Tracker</title>
+</head>
+<body>
+
+    <!-- Title of the tracker -->
+    <h2>Simple Expense Tracker</h2>
+
+    <!-- Input fields for description and amount -->
+    <label for="description">Expense Description: </label>
+    <input type="text" id="description" placeholder="Enter description"><br><br>
+
+    <label for="amount">Amount: </label>
+    <input type="number" id="amount" placeholder="Enter amount"><br><br>
+
+    <!-- Button to add an expense -->
+    <button onclick="addExpense()">Add Expense</button>
+
+    <!-- List of all added expenses -->
+    <h3>Expenses:</h3>
+    <ul id="expenseList"></ul>
+
+    <!-- Display the total amount -->
+    <h4>Total: $<span id="totalAmount">0</span></h4>
+
+    <script>
+        let total = 0
+        function addExpense() 
+            if (!description || isNaN(amount) || amount <= 0) {
+                alert("Please enter a valid description and amount!");
+                return;
+            }
+            total += amount;
+            document.getElementById('totalAmount').textContent = total.toFixed(2);
+
+            // Create a new list item for the expense and add it to the list
+            const expenseItem = document.createElement('li');
+            expenseItem.textContent = `${description}: $${amount.toFixed(2)}`;
+            document.getElementById('expenseList').appendChild(expenseItem);
+
+            // Clear the input fields after adding the expense
+            document.getElementById('description').value = '';
+            document.getElementById('amount').value = '';
+        }
+    </script>
+
+</body>
+</html>
