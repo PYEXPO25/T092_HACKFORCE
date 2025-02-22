@@ -56,14 +56,16 @@ Navigate to the project directory: bash cd repository-name
 
 Create a virtual environment: bash python -m venv venv
 
-Activate the virtual environment:
+Activate the virtual environment
 
 On Windows: bash venv\Scripts\activate
 
-Start the Application
+Start the Application:
+
 Run the  application: python manage.py runserver
 
-UI Overview
+UI Overview:
+
 Images to demonstrate the user interface:
 
 Example pages:expenses tracker logo 
