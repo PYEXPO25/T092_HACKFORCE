@@ -1,4 +1,9 @@
-PROBLEM STATEMENT                                                                                                                                                                                                                                                                                                                                                                                                                       
+![alt text](download.png)
+
+
+PROBLEM STATEMENT 
+
+
 Problem Statement ID – T092
 
 
@@ -25,6 +30,9 @@ Member 4 - GOKULNATH S
 Member 5 - AARTHI S
 
 Member 6 - MEERASOUNDHARAYA R
+
+Team photo
+![alt text](<WhatsApp Image 2025-02-22 at 16.58.40_dc9b015a.jpg>)
 
 Technical Stack
 
@@ -75,3 +83,5 @@ Landing Page: Landing Page Mockup
 Analytics View: Analytics Mockup
 
 
+youtube link:
+www.youtube.com/@kitepyexpo

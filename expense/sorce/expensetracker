@@ -56,7 +56,6 @@ class ExpenseTrackerApp(tk.Tk):
         )
         self.category_dropdown.grid(row=0, column=5, padx=5)
         self.date_label = tk.Label(
-
             self.frame_input, text="Date (YYYY-MM-DD):", font=("Helvetica", 12)
         )
         self.date_label.grid(row=0, column=6, padx=5)
@@ -177,5 +176,4 @@ class ExpenseTrackerApp(tk.Tk):
         plt.axis("equal")
         plt.title(f"Expense Categories Distribution (USD)")
         plt.show()
-
 
