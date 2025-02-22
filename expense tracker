@@ -1,0 +1,11 @@
+import pandas as pd
+import datetime
+
+class ExpenseTracker:
+    def __init__(self, file_name="expenses.csv"):
+        self.file_name = file_name
+        try:
+            self.expenses = pd.read_csv(self.file_name)
+        except FileNotFoundError:
+            self.expenses = pd.DataFrame(columns=["Date", "Category", "Amount", "Description"])
+
